@@ -1,0 +1,12 @@
+IP notes
+
+g(x) - x is p - p' where p is original pixel and p' is pixel neighbour and p - p' is the distance between these pixels
+    or x is Ip - Ip' where Ip is the intensity (brightness) of the original pixel and Ip' is the intensity of the neighbour pixel
+        - for greyscale, any intensity of R, G, or B can be taken. For colour images, either add up each R, G, B, intensity and take difference
+	  or perform bilateral filter on each colour channel (3 times total then)
+
+(200, 50, 150), (10, 250, 100) = (200 + 50 + 150) - (10 + 250 + 100) = intensity diff for colour imgs
+
+3 -> (1, 1)
+5 -> (2, 2)
+7 -> (3, 3)
